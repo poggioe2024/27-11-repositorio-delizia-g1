@@ -1,0 +1,15 @@
+D:\aplicacion-delizia\AplicacionDelizia\CapaLogica\bin\Exportar\net8.0\CapaLogica.deps.json
+D:\aplicacion-delizia\AplicacionDelizia\CapaLogica\bin\Exportar\net8.0\CapaLogica.dll
+D:\aplicacion-delizia\AplicacionDelizia\CapaLogica\bin\Exportar\net8.0\CapaLogica.pdb
+D:\aplicacion-delizia\AplicacionDelizia\CapaLogica\bin\Exportar\net8.0\CapaDatos.dll
+D:\aplicacion-delizia\AplicacionDelizia\CapaLogica\bin\Exportar\net8.0\CapaDatos.pdb
+D:\aplicacion-delizia\AplicacionDelizia\CapaLogica\obj\Exportar\net8.0\CapaLogica.csproj.AssemblyReference.cache
+D:\aplicacion-delizia\AplicacionDelizia\CapaLogica\obj\Exportar\net8.0\CapaLogica.GeneratedMSBuildEditorConfig.editorconfig
+D:\aplicacion-delizia\AplicacionDelizia\CapaLogica\obj\Exportar\net8.0\CapaLogica.AssemblyInfoInputs.cache
+D:\aplicacion-delizia\AplicacionDelizia\CapaLogica\obj\Exportar\net8.0\CapaLogica.AssemblyInfo.cs
+D:\aplicacion-delizia\AplicacionDelizia\CapaLogica\obj\Exportar\net8.0\CapaLogica.csproj.CoreCompileInputs.cache
+D:\aplicacion-delizia\AplicacionDelizia\CapaLogica\obj\Exportar\net8.0\CapaLogica.csproj.Up2Date
+D:\aplicacion-delizia\AplicacionDelizia\CapaLogica\obj\Exportar\net8.0\CapaLogica.dll
+D:\aplicacion-delizia\AplicacionDelizia\CapaLogica\obj\Exportar\net8.0\refint\CapaLogica.dll
+D:\aplicacion-delizia\AplicacionDelizia\CapaLogica\obj\Exportar\net8.0\CapaLogica.pdb
+D:\aplicacion-delizia\AplicacionDelizia\CapaLogica\obj\Exportar\net8.0\ref\CapaLogica.dll
