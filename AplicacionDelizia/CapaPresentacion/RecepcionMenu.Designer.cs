@@ -31,9 +31,11 @@
             btn_nuevopedido = new Button();
             btn_salir = new Button();
             panel1 = new Panel();
-            lbl_cedula = new Label();
             btn_seguimiento = new Button();
+            lbl_cedula = new Label();
+            pictureBox1 = new PictureBox();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // btn_nuevopedido
@@ -73,19 +75,8 @@
             panel1.Controls.Add(btn_nuevopedido);
             panel1.Location = new Point(3, 3);
             panel1.Name = "panel1";
-            panel1.Size = new Size(432, 420);
+            panel1.Size = new Size(432, 520);
             panel1.TabIndex = 7;
-            // 
-            // lbl_cedula
-            // 
-            lbl_cedula.AutoSize = true;
-            lbl_cedula.Font = new Font("OpenDyslexic 3", 17.9999981F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lbl_cedula.ForeColor = SystemColors.ControlLightLight;
-            lbl_cedula.Location = new Point(17, 29);
-            lbl_cedula.Name = "lbl_cedula";
-            lbl_cedula.Size = new Size(160, 42);
-            lbl_cedula.TabIndex = 0;
-            lbl_cedula.Text = "Recepción";
             // 
             // btn_seguimiento
             // 
@@ -100,16 +91,39 @@
             btn_seguimiento.UseVisualStyleBackColor = false;
             btn_seguimiento.Click += btn_seguimiento_Click;
             // 
+            // lbl_cedula
+            // 
+            lbl_cedula.AutoSize = true;
+            lbl_cedula.Font = new Font("OpenDyslexic 3", 17.9999981F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbl_cedula.ForeColor = SystemColors.ControlLightLight;
+            lbl_cedula.Location = new Point(17, 29);
+            lbl_cedula.Name = "lbl_cedula";
+            lbl_cedula.Size = new Size(160, 42);
+            lbl_cedula.TabIndex = 0;
+            lbl_cedula.Text = "Recepción";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.delizia_logo;
+            pictureBox1.Location = new Point(461, 337);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(294, 186);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 9;
+            pictureBox1.TabStop = false;
+            // 
             // RecepcionMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Transparent;
+            Controls.Add(pictureBox1);
             Controls.Add(panel1);
             Name = "RecepcionMenu";
-            Size = new Size(776, 426);
+            Size = new Size(776, 526);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -120,5 +134,6 @@
         private Panel panel1;
         private Label lbl_cedula;
         private Button btn_seguimiento;
+        private PictureBox pictureBox1;
     }
 }

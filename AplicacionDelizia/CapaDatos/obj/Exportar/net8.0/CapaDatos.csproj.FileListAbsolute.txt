@@ -10,3 +10,4 @@ D:\aplicacion-delizia\AplicacionDelizia\CapaDatos\obj\Exportar\net8.0\CapaDatos.
 D:\aplicacion-delizia\AplicacionDelizia\CapaDatos\obj\Exportar\net8.0\refint\CapaDatos.dll
 D:\aplicacion-delizia\AplicacionDelizia\CapaDatos\obj\Exportar\net8.0\CapaDatos.pdb
 D:\aplicacion-delizia\AplicacionDelizia\CapaDatos\obj\Exportar\net8.0\ref\CapaDatos.dll
+D:\aplicacion-delizia\AplicacionDelizia\CapaDatos\obj\Exportar\net8.0\CapaDatos.sourcelink.json

@@ -37,6 +37,7 @@
             panel1 = new Panel();
             button1 = new Button();
             pictureBox1 = new PictureBox();
+            button2 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -147,11 +148,26 @@
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
             // 
+            // button2
+            // 
+            button2.BackColor = Color.Silver;
+            button2.FlatStyle = FlatStyle.Popup;
+            button2.Font = new Font("OpenDyslexic 3", 12.9999981F, FontStyle.Bold);
+            button2.ForeColor = SystemColors.ControlText;
+            button2.Location = new Point(683, 18);
+            button2.Name = "button2";
+            button2.Size = new Size(57, 42);
+            button2.TabIndex = 7;
+            button2.Text = "ES";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
             // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Transparent;
+            Controls.Add(button2);
             Controls.Add(pictureBox1);
             Controls.Add(panel1);
             Name = "Login";
@@ -173,5 +189,6 @@
         private Panel panel1;
         private Button button1;
         private PictureBox pictureBox1;
+        private Button button2;
     }
 }

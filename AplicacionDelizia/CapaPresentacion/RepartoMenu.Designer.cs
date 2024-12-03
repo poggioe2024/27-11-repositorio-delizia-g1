@@ -33,7 +33,9 @@
             panel1 = new Panel();
             lbl_cedula = new Label();
             btn_salir = new Button();
+            pictureBox1 = new PictureBox();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // btn_mis_pedidos
@@ -71,7 +73,7 @@
             panel1.Controls.Add(btn_mis_pedidos);
             panel1.Location = new Point(3, 3);
             panel1.Name = "panel1";
-            panel1.Size = new Size(432, 420);
+            panel1.Size = new Size(432, 520);
             panel1.TabIndex = 8;
             // 
             // lbl_cedula
@@ -99,16 +101,28 @@
             btn_salir.UseVisualStyleBackColor = false;
             btn_salir.Click += btn_salir_Click_1;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.delizia_logo;
+            pictureBox1.Location = new Point(461, 337);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(294, 186);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 8;
+            pictureBox1.TabStop = false;
+            // 
             // RepartoMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Transparent;
+            Controls.Add(pictureBox1);
             Controls.Add(panel1);
             Name = "RepartoMenu";
-            Size = new Size(776, 426);
+            Size = new Size(776, 526);
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
@@ -119,5 +133,6 @@
         private Panel panel1;
         private Label lbl_cedula;
         private Button btn_salir;
+        private PictureBox pictureBox1;
     }
 }

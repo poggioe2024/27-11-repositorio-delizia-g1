@@ -17,6 +17,7 @@ namespace CapaPresentacion
         Funcionario user;
         List<Producto> productos;
         List<RecepcionConfirmacionProducto> productos_graficos;
+        int idioma;
         public RecepcionConfirmacion(Ventana padre, Funcionario user, List<Producto> productos)
         {
             InitializeComponent();
@@ -30,6 +31,37 @@ namespace CapaPresentacion
 
             this.productos = productos;
             mostrar_productos(productos);
+        }
+
+        public RecepcionConfirmacion(Ventana padre, Funcionario user, List<Producto> productos, int idioma)
+        {
+            InitializeComponent();
+            this.padre = padre;
+            this.user = user;
+
+            int x = 800 / 2 - this.Width / 2;
+            int y = 560 / 2 - this.Height / 2;
+
+            Location = new Point(x, y);
+
+            this.productos = productos;
+            mostrar_productos(productos);
+
+            this.idioma = idioma;
+            if (idioma == 1)
+            {
+                lbl_subtitulo.Text = "Customer details";
+                lbl_nombre.Text = "Name";
+                lbl_apellido.Text = "Surname";
+                lbl_telefono.Text = "Phone number";
+                lbl_direccion.Text = "Address";
+
+
+                lbl_subtitulo1.Text = "Order details";
+
+                btn_anterior.Text = "Back";
+                btn_confirmar.Text = "Order";
+            }
         }
 
         private void mostrar_productos(List<Producto> productos)
@@ -58,7 +90,14 @@ namespace CapaPresentacion
                 this.pan_productos.Controls.Add(producto);
             }
 
-            lbl_total.Text = "Precio total: $" + precio_total;
+            if (idioma == 1)
+            {
+                lbl_total.Text = "Order price: $" + precio_total;
+            }
+            else
+            {
+                lbl_total.Text = "Precio total: $" + precio_total;
+            }
         }
 
         private void btn_confirmar_Click(object sender, EventArgs e)
@@ -118,14 +157,14 @@ namespace CapaPresentacion
             // antes de cambiar de ventada
             this.Dispose();
             padre.Controls.Remove(this);
-            padre.Controls.Add(new RecepcionMenu(padre, user));
+            padre.Controls.Add(new RecepcionMenu(padre, user, idioma));
         }
 
         private void btn_anterior_Click(object sender, EventArgs e)
         {
             this.Dispose();
             padre.Controls.Remove(this);
-            padre.Controls.Add(new RecepcionSeleccion(padre, user, productos));
+            padre.Controls.Add(new RecepcionSeleccion(padre, user, productos, idioma));
         }
     }
 }

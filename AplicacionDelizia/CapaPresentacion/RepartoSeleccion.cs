@@ -18,6 +18,10 @@ namespace CapaPresentacion
         Ventana padre;
         List<Pedido> pedidos;
         List<RepartoPedido> pedidos_graficos = new List<RepartoPedido>();
+
+
+        private Thread hilo;
+        private bool salir = false;
         public RepartoSeleccion(Ventana padre, Funcionario user)
         {
             InitializeComponent();
@@ -35,6 +39,26 @@ namespace CapaPresentacion
             pedidos = lreparto.obtener_pedidos_libres();
 
             mostrar_pedidos(pedidos);
+
+            hilo = new Thread(actualizar);
+            hilo.Start();
+        }
+
+        public void actualizar()
+        {
+            while (salir != true)
+            {
+                Thread.Sleep(3000);
+
+                LCocina lcocina = new LCocina();
+                List<Pedido> pedidos_nuevos = lcocina.obtener_datos_pedidos();
+
+                pedidos.Clear();
+                LReparto lreparto = new LReparto();
+                pedidos = lreparto.obtener_pedidos_s();
+
+                actualizar_pantalla();
+            }
         }
 
         private void btn_volver_Click(object sender, EventArgs e)
@@ -84,15 +108,25 @@ namespace CapaPresentacion
 
         public void actualizar_pantalla()
         {
-            pan_pedidos.Controls.Clear();
+            if (pan_pedidos.InvokeRequired)
+            {
+                pan_pedidos.Invoke(new Action(() =>
+                {
+                    pan_pedidos.Controls.Clear();
 
-            pedidos.Clear();
-            pedidos_graficos.Clear();
+                    pedidos_graficos.Clear();
 
-            LReparto lreparto = new LReparto();
-            pedidos = lreparto.obtener_pedidos_libres();
+                    mostrar_pedidos(pedidos);
+                }));
+            }
+            else
+            {
+                pan_pedidos.Controls.Clear();
 
-            mostrar_pedidos(pedidos);
+                pedidos_graficos.Clear();
+
+                mostrar_pedidos(pedidos);
+            }
         }
     }
 }

@@ -10,6 +10,38 @@ namespace CapaLogica
     public class LAdministracion
     {
 
+        public void agregar_productos(string consulta)
+        {
+            Conexion c = new Conexion();
+            c.abrir_conexion();
+            c.modificar(consulta);
+        }
+
+        public Funcionario modificacion_obtener_funcionario(string cedula)
+        {
+            string consulta = "SELECT `Cedula`, `Rol`, `Nombre`, `Apellido`, `Correo`, `Contrasena`, `Direccion`, `Activo` FROM `funcionarios` WHERE Cedula='" + cedula + "'";
+            List<List<string>> resultados = new Conexion().consultar(consulta);
+
+            List<Funcionario> funcionarios = new List<Funcionario>();
+            foreach (List<string> r in resultados)
+            {
+                Funcionario funcionario = new Funcionario();
+                funcionario.cedula = r[0];
+                funcionario.rol = int.Parse(r[1]);
+                funcionario.nombre = r[2];
+                funcionario.apellido = r[3];
+                funcionario.correo = r[4];
+                funcionario.contrasena = r[5];
+                funcionario.direccion = r[6];
+                funcionario.activo = r[7];
+
+                funcionarios.Add(funcionario);
+            }
+
+
+            return funcionarios[0];
+        }
+
         public List<Funcionario> obtener_funcionarios()
         {
             List<Funcionario> funcionarios = new List<Funcionario>();
@@ -63,5 +95,23 @@ namespace CapaLogica
 
             return consulta;
         }
+
+        public void GenerarConsultaActualizar(Funcionario funcionario)
+        {
+            string consulta = "UPDATE `funcionarios` SET " +
+                              "`Cedula` = '" + funcionario.cedula + "', " +
+                              "`Rol` = " + funcionario.rol + ", " +
+                              "`Nombre` = '" + funcionario.nombre + "', " +
+                              "`Apellido` = '" + funcionario.apellido + "', " +
+                              "`Correo` = '" + funcionario.correo + "', " +
+                              "`Contrasena` = '" + funcionario.contrasena + "', " +
+                              "`Direccion` = '" + funcionario.direccion + "', " +
+                              "`Activo` = '" + funcionario.activo + "' " +
+                              "WHERE `Cedula` = '" + funcionario.cedula + "';";
+            Conexion c = new Conexion();
+            c.abrir_conexion();
+            c.modificar(consulta);
+        }
+
     }
 }

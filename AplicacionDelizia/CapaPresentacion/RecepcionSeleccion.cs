@@ -16,8 +16,46 @@ namespace CapaPresentacion
     {
         Ventana padre;
         Funcionario user;
+        int idioma;
+
+        private Thread hilo;
+        private bool salir = false;
+
         List<Producto> productos;
         List<RecepcionProducto> productos_graficos;
+        public RecepcionSeleccion(Ventana padre, Funcionario user, List<Producto> productos, int idioma)
+        {
+            InitializeComponent();
+            this.padre = padre;
+            this.user = user;
+
+            int x = 800 / 2 - this.Width / 2;
+            int y = 560 / 2 - this.Height / 2;
+
+            Location = new Point(x, y);
+
+            // obtener productos
+            if (productos != null) // si le pasamos la lista de productos la iguala
+            {
+                this.productos = productos;
+            }
+            else // si no la obtiene
+            {
+                LRecepcion lrecepcion = new LRecepcion();
+                productos = lrecepcion.obtener_productos();
+            }
+
+            // mostrar productos
+            mostrar_productos(productos);
+            this.idioma = idioma;
+
+            if (idioma == 1)
+            {
+                btn_siguiente.Text = "Next";
+                button1.Text = "Cancel";
+            }
+        }
+
         public RecepcionSeleccion(Ventana padre, Funcionario user, List<Producto> productos)
         {
             InitializeComponent();
@@ -91,21 +129,21 @@ namespace CapaPresentacion
             {
                 lista_productos.Add(rp.producto);
             }
-            padre.Controls.Add(new RecepcionConfirmacion(padre, user, lista_productos));
+            padre.Controls.Add(new RecepcionConfirmacion(padre, user, lista_productos, idioma));
         }
 
         private void btn_cancelar_Click(object sender, EventArgs e)
         {
             this.Dispose();
             padre.Controls.Remove(this);
-            padre.Controls.Add(new RecepcionMenu(padre, user));
+            padre.Controls.Add(new RecepcionMenu(padre, user, idioma));
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Dispose();
             padre.Controls.Remove(this);
-            padre.Controls.Add(new RecepcionMenu(padre, user));
+            padre.Controls.Add(new RecepcionMenu(padre, user, idioma));
         }
 
         private void RecepcionSeleccion_Load(object sender, EventArgs e)

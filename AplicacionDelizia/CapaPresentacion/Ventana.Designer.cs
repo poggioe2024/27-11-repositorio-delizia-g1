@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ventana));
             SuspendLayout();
             // 
             // Ventana
@@ -39,7 +40,9 @@
             ClientSize = new Size(804, 561);
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Ventana";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Delizia";
             ResumeLayout(false);
         }

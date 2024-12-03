@@ -21,7 +21,7 @@ namespace CapaPresentacion
             this.padre = padre;
             this.user = user;
             int x = 800 / 2 - this.Width / 2;
-            int y = 450 / 2 - this.Height / 2;
+            int y = 560 / 2 - this.Height / 2;
 
             Location = new Point(x, y);
         }
@@ -38,6 +38,27 @@ namespace CapaPresentacion
             this.Dispose();
             padre.Controls.Remove(this);
             padre.Controls.Add(new AdministracionUsuariosAgregar(padre, user));
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            padre.Controls.Remove(this);
+            padre.Controls.Add(new AdmininistracionProductos(padre, user));
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            padre.Controls.Remove(this);
+            padre.Controls.Add(new AdministracionUsuariosModificar(padre, user));
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            padre.Controls.Remove(this);
+            padre.Controls.Add(new Seguimiento(padre, user, this));
         }
     }
 }

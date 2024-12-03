@@ -22,7 +22,7 @@ namespace CapaPresentacion
             this.user = user;
 
             int x = 800 / 2 - this.Width / 2;
-            int y = 450 / 2 - this.Height / 2;
+            int y = 560 / 2 - this.Height / 2;
 
             Location = new Point(x, y);
         }

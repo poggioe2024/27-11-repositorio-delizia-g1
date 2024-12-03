@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "D:\\aplicacion-delizia\\AplicacionDelizia\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0E9AC973-6E30-49E6-AB5C-3FBDA51BC806}|CapaPresentacion\\CapaPresentacion.csproj|d:\\aplicacion-delizia\\aplicaciondelizia\\capapresentacion\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E9AC973-6E30-49E6-AB5C-3FBDA51BC806}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0E9AC973-6E30-49E6-AB5C-3FBDA51BC806}|CapaPresentacion\\CapaPresentacion.csproj|d:\\aplicacion-delizia\\aplicaciondelizia\\capapresentacion\\seguimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E9AC973-6E30-49E6-AB5C-3FBDA51BC806}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\seguimiento.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E9AC973-6E30-49E6-AB5C-3FBDA51BC806}|CapaPresentacion\\CapaPresentacion.csproj|d:\\aplicacion-delizia\\aplicaciondelizia\\capapresentacion\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0E9AC973-6E30-49E6-AB5C-3FBDA51BC806}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{0E9AC973-6E30-49E6-AB5C-3FBDA51BC806}|CapaPresentacion\\CapaPresentacion.csproj|d:\\aplicacion-delizia\\aplicaciondelizia\\capapresentacion\\administracionmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E9AC973-6E30-49E6-AB5C-3FBDA51BC806}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\administracionmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E9AC973-6E30-49E6-AB5C-3FBDA51BC806}|CapaPresentacion\\CapaPresentacion.csproj|d:\\aplicacion-delizia\\aplicaciondelizia\\capapresentacion\\administracionmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0E9AC973-6E30-49E6-AB5C-3FBDA51BC806}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\administracionmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E9AC973-6E30-49E6-AB5C-3FBDA51BC806}|CapaPresentacion\\CapaPresentacion.csproj|d:\\aplicacion-delizia\\aplicaciondelizia\\capapresentacion\\cocinapedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E9AC973-6E30-49E6-AB5C-3FBDA51BC806}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\cocinapedidos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E9AC973-6E30-49E6-AB5C-3FBDA51BC806}|CapaPresentacion\\CapaPresentacion.csproj|d:\\aplicacion-delizia\\aplicaciondelizia\\capapresentacion\\repartoseleccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E9AC973-6E30-49E6-AB5C-3FBDA51BC806}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\repartoseleccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E9AC973-6E30-49E6-AB5C-3FBDA51BC806}|CapaPresentacion\\CapaPresentacion.csproj|D:\\aplicacion-delizia\\AplicacionDelizia\\capapresentacion\\ventana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0E9AC973-6E30-49E6-AB5C-3FBDA51BC806}|CapaPresentacion\\CapaPresentacion.csproj|solutionrelative:capapresentacion\\ventana.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,28 +42,76 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Login.cs",
-              "DocumentMoniker": "D:\\aplicacion-delizia\\AplicacionDelizia\\CapaPresentacion\\Login.cs",
-              "RelativeDocumentMoniker": "CapaPresentacion\\Login.cs",
-              "ToolTip": "D:\\aplicacion-delizia\\AplicacionDelizia\\CapaPresentacion\\Login.cs",
-              "RelativeToolTip": "CapaPresentacion\\Login.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABkAAAAnAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "AdministracionMenu.cs",
+              "DocumentMoniker": "D:\\aplicacion-delizia\\AplicacionDelizia\\CapaPresentacion\\AdministracionMenu.cs",
+              "RelativeDocumentMoniker": "CapaPresentacion\\AdministracionMenu.cs",
+              "ToolTip": "D:\\aplicacion-delizia\\AplicacionDelizia\\CapaPresentacion\\AdministracionMenu.cs",
+              "RelativeToolTip": "CapaPresentacion\\AdministracionMenu.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAD4vzwAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T02:26:18.317Z",
+              "WhenOpened": "2024-12-02T23:26:11.353Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Login.cs [Design]",
-              "DocumentMoniker": "D:\\aplicacion-delizia\\AplicacionDelizia\\CapaPresentacion\\Login.cs",
-              "RelativeDocumentMoniker": "CapaPresentacion\\Login.cs",
-              "ToolTip": "D:\\aplicacion-delizia\\AplicacionDelizia\\CapaPresentacion\\Login.cs [Design]",
-              "RelativeToolTip": "CapaPresentacion\\Login.cs [Design]",
+              "DocumentIndex": 2,
+              "Title": "AdministracionMenu.cs [Design]",
+              "DocumentMoniker": "D:\\aplicacion-delizia\\AplicacionDelizia\\CapaPresentacion\\AdministracionMenu.cs",
+              "RelativeDocumentMoniker": "CapaPresentacion\\AdministracionMenu.cs",
+              "ToolTip": "D:\\aplicacion-delizia\\AplicacionDelizia\\CapaPresentacion\\AdministracionMenu.cs [Design]",
+              "RelativeToolTip": "CapaPresentacion\\AdministracionMenu.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T02:02:48.336Z",
+              "WhenOpened": "2024-12-02T23:23:24.433Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RepartoSeleccion.cs",
+              "DocumentMoniker": "D:\\aplicacion-delizia\\AplicacionDelizia\\CapaPresentacion\\RepartoSeleccion.cs",
+              "RelativeDocumentMoniker": "CapaPresentacion\\RepartoSeleccion.cs",
+              "ToolTip": "D:\\aplicacion-delizia\\AplicacionDelizia\\CapaPresentacion\\RepartoSeleccion.cs",
+              "RelativeToolTip": "CapaPresentacion\\RepartoSeleccion.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAAwIAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T22:50:58.156Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Seguimiento.cs",
+              "DocumentMoniker": "D:\\aplicacion-delizia\\AplicacionDelizia\\CapaPresentacion\\Seguimiento.cs",
+              "RelativeDocumentMoniker": "CapaPresentacion\\Seguimiento.cs",
+              "ToolTip": "D:\\aplicacion-delizia\\AplicacionDelizia\\CapaPresentacion\\Seguimiento.cs",
+              "RelativeToolTip": "CapaPresentacion\\Seguimiento.cs",
+              "ViewState": "AgIAAKAAAAAAAAAAAAAAALcAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T22:45:04.249Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CocinaPedidos.cs",
+              "DocumentMoniker": "D:\\aplicacion-delizia\\AplicacionDelizia\\CapaPresentacion\\CocinaPedidos.cs",
+              "RelativeDocumentMoniker": "CapaPresentacion\\CocinaPedidos.cs",
+              "ToolTip": "D:\\aplicacion-delizia\\AplicacionDelizia\\CapaPresentacion\\CocinaPedidos.cs",
+              "RelativeToolTip": "CapaPresentacion\\CocinaPedidos.cs",
+              "ViewState": "AgIAAIwAAAAAAAAAAAAIwKMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T22:46:06.106Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Ventana.cs [Design]",
+              "DocumentMoniker": "D:\\aplicacion-delizia\\AplicacionDelizia\\CapaPresentacion\\Ventana.cs",
+              "RelativeDocumentMoniker": "CapaPresentacion\\Ventana.cs",
+              "ToolTip": "D:\\aplicacion-delizia\\AplicacionDelizia\\CapaPresentacion\\Ventana.cs [Design]",
+              "RelativeToolTip": "CapaPresentacion\\Ventana.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-02T22:43:10.865Z"
             }
           ]
         }

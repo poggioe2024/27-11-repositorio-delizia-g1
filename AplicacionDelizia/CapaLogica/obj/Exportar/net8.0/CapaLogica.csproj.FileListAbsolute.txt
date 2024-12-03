@@ -13,3 +13,4 @@ D:\aplicacion-delizia\AplicacionDelizia\CapaLogica\obj\Exportar\net8.0\CapaLogic
 D:\aplicacion-delizia\AplicacionDelizia\CapaLogica\obj\Exportar\net8.0\refint\CapaLogica.dll
 D:\aplicacion-delizia\AplicacionDelizia\CapaLogica\obj\Exportar\net8.0\CapaLogica.pdb
 D:\aplicacion-delizia\AplicacionDelizia\CapaLogica\obj\Exportar\net8.0\ref\CapaLogica.dll
+D:\aplicacion-delizia\AplicacionDelizia\CapaLogica\obj\Exportar\net8.0\CapaLogica.sourcelink.json

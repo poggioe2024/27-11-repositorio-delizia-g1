@@ -56,3 +56,6 @@ D:\aplicacion-delizia\AplicacionDelizia\CapaPresentacion\obj\Exportar\net8.0-win
 D:\aplicacion-delizia\AplicacionDelizia\CapaPresentacion\obj\Exportar\net8.0-windows\CapaPresentacion.Seguimiento.resources
 D:\aplicacion-delizia\AplicacionDelizia\CapaPresentacion\obj\Exportar\net8.0-windows\CapaPresentacion.SeguimientoPedido.resources
 D:\aplicacion-delizia\AplicacionDelizia\CapaPresentacion\obj\Exportar\net8.0-windows\CapaPresentacion.AdministracionMenu.resources
+D:\aplicacion-delizia\AplicacionDelizia\CapaPresentacion\obj\Exportar\net8.0-windows\CapaPresentacion.sourcelink.json
+D:\aplicacion-delizia\AplicacionDelizia\CapaPresentacion\obj\Exportar\net8.0-windows\CapaPresentacion.AdmininistracionProductos.resources
+D:\aplicacion-delizia\AplicacionDelizia\CapaPresentacion\obj\Exportar\net8.0-windows\CapaPresentacion.AdministracionUsuariosModificar.resources

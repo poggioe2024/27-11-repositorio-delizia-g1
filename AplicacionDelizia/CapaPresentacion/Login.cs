@@ -14,6 +14,7 @@ namespace CapaPresentacion
     public partial class Login : UserControl
     {
         Ventana padre;
+        int idioma = 0;
         public Login(Ventana padre)
         {
             InitializeComponent();
@@ -24,6 +25,31 @@ namespace CapaPresentacion
             int y = 560 / 2 - this.Height / 2;
 
             Location = new Point(x, y);
+        }
+
+        public Login(Ventana padre, int idioma)
+        {
+            InitializeComponent();
+            this.padre = padre;
+            // 816, 489
+
+            int x = 800 / 2 - this.Width / 2;
+            int y = 560 / 2 - this.Height / 2;
+
+            Location = new Point(x, y);
+
+            this.idioma = idioma;
+
+            if (idioma == 1)
+            {
+                button2.Text = "EN";
+
+                lbl_cedula.Text = "ID";
+                lbl_contrasena.Text = "Password";
+
+                btn_cancelar.Text = "Cancel";
+                btn_entrar.Text = "Log in";
+            }
         }
 
         private void btn_entrar_Click(object sender, EventArgs e)
@@ -66,7 +92,7 @@ namespace CapaPresentacion
                         padre.Controls.Remove(this); // elimina visualmente el login
 
                         llogin.registrar_log(sesion_actual); // registra el inicio de sesion
-                        padre.Controls.Add(new RecepcionMenu(padre, sesion_actual)); // da acceso a la app de recepcion
+                        padre.Controls.Add(new RecepcionMenu(padre, sesion_actual, idioma)); // da acceso a la app de recepcion
                         break;
                     case 2:
                         this.Dispose(); // elimina el login de la memoria
@@ -119,6 +145,35 @@ namespace CapaPresentacion
             else
             {
                 txt_contrasena.PasswordChar = '*';
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // cambiar idiomas menus
+            if (button2.Text == "ES")
+            {
+                button2.Text = "EN";
+
+                lbl_cedula.Text = "ID";
+                lbl_contrasena.Text = "Password";
+
+                btn_cancelar.Text = "Cancel";
+                btn_entrar.Text = "Log in";
+
+                idioma = 1;
+            }
+            else
+            {
+                button2.Text = "ES";
+
+                lbl_cedula.Text = "Cédula";
+                lbl_contrasena.Text = "Contraseña";
+
+                btn_cancelar.Text = "Cancelar";
+                btn_entrar.Text = "Iniciar sesión";
+
+                idioma = 0;
             }
         }
     }

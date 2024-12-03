@@ -17,6 +17,8 @@ namespace CapaPresentacion
         Funcionario user;
         List<Pedido> pedidos;
         List<CocinaPedido> pedidos_graficos = new List<CocinaPedido>();
+        private Thread hilo;
+        private bool salir = false;
         public CocinaPedidos(Ventana padre, Funcionario user)
         {
             InitializeComponent();
@@ -32,10 +34,14 @@ namespace CapaPresentacion
             pedidos = lcocina.obtener_datos_pedidos();
 
             mostrar_pedidos(pedidos);
+
+            hilo = new Thread(comparar_listas);
+            hilo.Start();
         }
 
         private void btn_volver_Click(object sender, EventArgs e)
         {
+            salir = true;
             this.Dispose();
             padre.Controls.Remove(this);
             padre.Controls.Add(new CocinaMenu(padre, user));
@@ -77,17 +83,83 @@ namespace CapaPresentacion
             }
         }
 
+        public void comparar_listas()
+        {
+            while (salir != true)
+            {
+                Thread.Sleep(3000);
+
+                LCocina lcocina = new LCocina();
+                List<Pedido> pedidos_nuevos = lcocina.obtener_datos_pedidos();
+
+                pedidos.Clear();
+                pedidos = lcocina.obtener_datos_pedidos();
+
+                actualizar_pantalla();
+                /*
+                if (pedidos_nuevos.Count == pedidos.Count)
+                {
+                    // compara uno a uno
+                    bool igual = true;
+                    for (int i = 0; i < pedidos.Count; i++)
+                    {
+                        if (pedidos[i].id != pedidos_nuevos[i].id)
+                        {
+                            igual = false;
+                        }
+                    }
+                    // si no es igual
+                    if (!igual)
+                    {
+                        pedidos.Clear();
+                        foreach (Pedido p in pedidos_nuevos)
+                        {
+                            pedidos.Add(p);
+                        }
+                        actualizar_pantalla();
+                    }
+                }
+                else if (pedidos_nuevos.Count > pedidos.Count)
+                {
+                    // compara uno a uno y agrega los diferentes
+                    List<Producto> lista_temporal = new List<Producto>();
+                    for (int i = 0; i < pedidos_nuevos.Count; i++)
+                    {
+                        for (int k = 0; k < pedidos.Count; i++)
+                        {
+                            if (pedidos[k].id == pedidos_nuevos[i].id)
+                            {
+                                //lista_temporal.Add(pedidos_nuevos[i]);
+                            }
+                        }
+                            
+                    }
+                }
+                else
+                {
+                    // error
+                }*/
+            }
+        }
+
         public void actualizar_pantalla()
         {
-            pan_pedidos.Controls.Clear();
+                if (pan_pedidos.InvokeRequired)
+                {
+                    pan_pedidos.Invoke(new Action(() =>
+                    {
+                        pan_pedidos.Controls.Clear();
+                        pedidos_graficos.Clear();
 
-            pedidos.Clear();
-            pedidos_graficos.Clear();
-
-            LCocina lcocina = new LCocina();
-            pedidos = lcocina.obtener_datos_pedidos();
-
-            mostrar_pedidos(pedidos);
+                        mostrar_pedidos(pedidos);
+                    }));
+                }
+                else
+                {
+                    pan_pedidos.Controls.Clear();
+                    pedidos_graficos.Clear();
+                    mostrar_pedidos(pedidos);
+                }
         }
     }
 }
